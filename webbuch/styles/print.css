@@ -393,6 +393,10 @@ h2 {
   page-break-after: avoid;
 }
 
+h2 + h3 {
+  margin-top: 11pt;  
+}
+
 h3 {
   font-size: 13pt;
   margin-top: 20pt;
