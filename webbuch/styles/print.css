@@ -200,7 +200,7 @@ p {
   font-family: -apple-system,BlinkMacSystemFont,"noto serif",helvetica neue,helvetica,roboto,segoe ui,arial,sans-serif;
   font-size: 9pt;
   line-height: 14pt;
-  text-align: justify;
+  /*text-align: justify;*/
   margin-bottom: 0pt;
   letter-spacing: 0.2pt;
   word-spacing: 0.2pt;
@@ -394,7 +394,7 @@ h2 {
 }
 
 h2 + h3 {
-  margin-top: 11pt;  
+  margin-top: 11pt;
 }
 
 h3 {
