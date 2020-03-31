@@ -1036,7 +1036,7 @@ ol.upper-latin {
   -epubx-flow-into: logo;
 }
 
-/* pages layout */
+/* pages layout
 
 @-epubx-page-master first-page-cover {
   -epubx-page: 1;
@@ -1082,7 +1082,7 @@ ol.upper-latin {
 @-epubx-page-master second-page-backcover {
   -epubx-page: 114;
   background-size: cover;
-}
+}*/
 
 @-epubx-page-master titlepagepage {
   @-epubx-partition body {
