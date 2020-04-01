@@ -558,7 +558,8 @@ ul {
   line-height: 14pt;
 }
 
-li > p + p, table > p + p {
+
+.article-body > li p + p, .article-body > table p + p {
     margin-top: 0pt;
   color: blue;}
 
