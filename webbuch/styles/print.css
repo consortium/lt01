@@ -558,8 +558,9 @@ ul {
   line-height: 14pt;
 }
 
-li p {
-margin-top: 0; }
+li p, table p {
+    margin-top: 0pt;
+  color: green;}
 
 #page-navigation ol {
     margin: 0;
