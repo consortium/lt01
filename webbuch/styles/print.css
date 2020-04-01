@@ -558,7 +558,7 @@ ul {
   line-height: 14pt;
 }
 
-li p + p  {
+li p {
 margin-top: 0; }
 
 #page-navigation ol {
