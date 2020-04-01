@@ -904,25 +904,25 @@ section[data-type="chaptertitle"]::before {
  break-after: always;
 }*/
 
-section[data-type="chaptertitle"] {
+section[data-type="chapter"] {
  break-before: left;
 }
-section[data-type="chaptertitle"] > h2:first, section[data-type="chaptertitle"] > p:first {
+section[data-type="chapter"] > h2:first, section[data-type="chapter"] > p:first {
     page-break-before: left;
   /* forces new chapters to start on a left hand page */ }
-section[data-type="chaptertitle"]::after {
+section[data-type="chapter"]::after {
     content: "";
     display: block; }
 
-section[data-type="toc"] {
+/*section[data-type="toc"] {
  break-before: right;
 }
 section[data-type="toc"] > h1 {
     page-break-before: right;
-    /* forces new chapters to start on a right hand page */ }
+    /* forces new chapters to start on a right hand page */ /*}
 section[data-type="toc"]::before {
     content: "";
-    display: block; }
+    display: block; }*/
 
 section[data-type="frontmatter"] {
  break-after: always;
