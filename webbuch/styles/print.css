@@ -397,7 +397,7 @@ h2 {
 }
 
 h2 + h3 {
-  margin-top: 11pt;
+  margin-top: 0;
 }
 
 h3 {
@@ -907,8 +907,9 @@ section[data-type="chaptertitle"]::before {
 section[data-type="chapter"] {
  break-before: left;
 }
-section[data-type="chapter"] > h2:first, section[data-type="chapter"] > p:first {
+section[data-type="chapter"] > .article-body {
     page-break-before: left;
+    color: blue;
   /* forces new chapters to start on a left hand page */ }
 section[data-type="chapter"]::after {
     content: "";
