@@ -558,6 +558,9 @@ ul {
   line-height: 14pt;
 }
 
+li p + p  {
+margin-top: 0; }
+
 #page-navigation ol {
     margin: 0;
     padding: 0;
@@ -568,7 +571,7 @@ ul {
 ol {
   display: block;
   list-style-type: decimal;
-  list-style-position: inside;
+  /*list-style-position: inside;*/
   margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 0;
