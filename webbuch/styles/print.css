@@ -209,12 +209,15 @@ p {
 }
 
 p + p {
-  text-indent: 1.5em;
-  margin-top: 0 }
+  text-indent: 0;
+  margin-top: 9pt; }
 
 p:first-of-type {
   text-indent: 0;
 }
+
+/*p:last-child {
+  margin-bottom: 9pt; }*/
 
 .Kolophon p {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,segoe ui,arial,sans-serif;
@@ -393,6 +396,10 @@ h2 {
   page-break-after: avoid;
 }
 
+h2 + h3 {
+  margin-top: 0;
+}
+
 h3 {
   font-size: 13pt;
   margin-top: 20pt;
@@ -430,7 +437,6 @@ body {
 .one ol li {
   list-style-type: decimal;
 }
-
 
 h1:before {
   display: block;
@@ -552,6 +558,14 @@ ul {
   line-height: 14pt;
 }
 
+
+div.table-cell-container p + p {
+  margin-top: 0pt;}
+
+li p {
+   display: inline;
+}
+
 #page-navigation ol {
     margin: 0;
     padding: 0;
@@ -562,6 +576,7 @@ ul {
 ol {
   display: block;
   list-style-type: decimal;
+  /*list-style-position: inside;*/
   margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 0;
@@ -867,7 +882,7 @@ section[data-type="toc"] a:after {
   margin-left: 0em;
 }
 
-h2 + p {
+h2 + p, h3 + p, h4 + p {
   margin-top: -5pt;
 }
 
@@ -878,17 +893,44 @@ section[data-type="chapter"] {
 section[data-type="chaptertitle"] {
  break-before: right;
 }
+section[data-type="chaptertitle"] > h1 {
+    page-break-before: right;
+    /* forces new chapters to start on a right hand page */ }
+/*section[data-type="chaptertitle"]::before {
+    content: "";
+    display: block; }*/
 
-section[data-type="chapter"] {
+/*section[data-type="chapter"] {
  break-after: always;
+}*/
+
+/*section[data-type="chapter"] {
+ break-before: left;
 }
+section[data-type="chapter"] > .article-body {
+    page-break-before: left;
+    color: blue;
+  /* forces new chapters to start on a left hand page *//* }
+section[data-type="chapter"]::after {
+    content: "";
+    display: block; }*/
+
+/*section[data-type="toc"] {
+ break-before: right;
+}
+section[data-type="toc"] > h1 {
+    page-break-before: right;
+    /* forces new chapters to start on a right hand page */ /*}
+section[data-type="toc"]::before {
+    content: "";
+    display: block; }*/
 
 section[data-type="frontmatter"] {
  break-after: always;
 }
 
 section[data-type="fm"] {
-    page-break-before: always;
+  page-break-before: always;
 }
 
 section[data-type="fm2"] {
@@ -1036,7 +1078,7 @@ ol.upper-latin {
   -epubx-flow-into: logo;
 }
 
-/* pages layout */
+/* pages layout
 
 @-epubx-page-master first-page-cover {
   -epubx-page: 1;
@@ -1082,7 +1124,7 @@ ol.upper-latin {
 @-epubx-page-master second-page-backcover {
   -epubx-page: 114;
   background-size: cover;
-}
+}*/
 
 @-epubx-page-master titlepagepage {
   @-epubx-partition body {
