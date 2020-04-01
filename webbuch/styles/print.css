@@ -559,9 +559,13 @@ ul {
 }
 
 
-.article-body > ul li + p + p, div.table-cell-container p + p {
-    margin-top: 0pt;
+div.table-cell-container p + p {
+  margin-top: 0pt;
   color: green;}
+
+li p {
+   display: inline;
+}
 
 #page-navigation ol {
     margin: 0;
