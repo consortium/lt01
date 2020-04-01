@@ -907,7 +907,7 @@ section[data-type="chaptertitle"]::before {
 section[data-type="chaptertitle"] {
  break-before: left;
 }
-section[data-type="chaptertitle"] > h2:first {
+section[data-type="chaptertitle"] > h2:first, section[data-type="chaptertitle"] > p:first {
     page-break-before: left;
   /* forces new chapters to start on a left hand page */ }
 section[data-type="chaptertitle"]::after {
