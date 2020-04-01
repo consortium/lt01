@@ -216,8 +216,8 @@ p:first-of-type {
   text-indent: 0;
 }
 
-p:last-child {
-  margin-bottom: 9pt; }
+/*p:last-child {
+  margin-bottom: 9pt; }*/
 
 .Kolophon p {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,segoe ui,arial,sans-serif;
@@ -561,7 +561,7 @@ ul {
 
 .article-body > ul li + p + p, div.table-cell-container p + p {
     margin-top: 0pt;
-  color: blue;}
+  color: green;}
 
 #page-navigation ol {
     margin: 0;
