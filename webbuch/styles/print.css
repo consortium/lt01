@@ -882,7 +882,7 @@ section[data-type="toc"] a:after {
   margin-left: 0em;
 }
 
-h2 + p {
+h2 + p, h3 + p, h4 + p {
   margin-top: -5pt;
 }
 
