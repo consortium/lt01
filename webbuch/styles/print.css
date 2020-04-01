@@ -559,7 +559,7 @@ ul {
 }
 
 
-.article-body > li p + p, .article-body > table p + p {
+.article-body > ul li + p + p, div.table-cell-container p + p {
     margin-top: 0pt;
   color: blue;}
 
