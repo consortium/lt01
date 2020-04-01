@@ -896,24 +896,24 @@ section[data-type="chaptertitle"] {
 section[data-type="chaptertitle"] > h1 {
     page-break-before: right;
     /* forces new chapters to start on a right hand page */ }
-section[data-type="chaptertitle"]::before {
+/*section[data-type="chaptertitle"]::before {
     content: "";
-    display: block; }
+    display: block; }*/
 
 /*section[data-type="chapter"] {
  break-after: always;
 }*/
 
-section[data-type="chapter"] {
+/*section[data-type="chapter"] {
  break-before: left;
 }
 section[data-type="chapter"] > .article-body {
     page-break-before: left;
     color: blue;
-  /* forces new chapters to start on a left hand page */ }
+  /* forces new chapters to start on a left hand page *//* }
 section[data-type="chapter"]::after {
     content: "";
-    display: block; }
+    display: block; }*/
 
 /*section[data-type="toc"] {
  break-before: right;
