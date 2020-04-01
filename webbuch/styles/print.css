@@ -899,6 +899,16 @@ section[data-type="chapter"] {
  break-after: always;
 }
 
+section[data-type="toc"] {
+ break-before: right;
+}
+section[data-type="toc"] > h1 {
+    page-break-before: right;
+    /* forces new chapters to start on a right hand page */ }
+section[data-type="toc"]::before {
+    content: "";
+    display: block; }
+
 section[data-type="frontmatter"] {
  break-after: always;
 }
