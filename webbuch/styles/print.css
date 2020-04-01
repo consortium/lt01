@@ -888,6 +888,12 @@ section[data-type="chapter"] {
 section[data-type="chaptertitle"] {
  break-before: right;
 }
+section[data-type="chaptertitle"] > h1 {
+    page-break-before: right;
+    /* forces new chapters to start on a right hand page */ }
+section[data-type="chaptertitle"]::before {
+    content: "";
+    display: block; }
 
 section[data-type="chapter"] {
  break-after: always;
@@ -898,7 +904,7 @@ section[data-type="frontmatter"] {
 }
 
 section[data-type="fm"] {
-    page-break-before: always;
+  page-break-before: always;
 }
 
 section[data-type="fm2"] {
