@@ -886,9 +886,9 @@ h2 + p, h3 + p, h4 + p {
   margin-top: -5pt;
 }
 
-section[data-type="chapter"] {
- /* break-before: page; */
-}
+/*section[data-type="chapter"] {
+ /* break-before: page; 
+}*/
 
 section[data-type="chaptertitle"] {
   page-break-after: always; }
@@ -896,10 +896,18 @@ section[data-type="chaptertitle"] {
     page-break-before: always;}
   section[data-type="chaptertitle"].open > h1 {
     page-break-before: right; }
-    section[data-type="chaptertitle"].open > h1:before {
+  /*  section[data-type="chaptertitle"].open > h1:before {
 
       left: 100%;
-       }
+       }*/
+
+       section[data-type="chapter"] {
+         page-break-after: always; }
+         section[data-type="chaptertitle"] > div.article-part {
+           page-break-before: always;}
+         section[data-type="chaptertitle"].open > div.article-part {
+           page-break-after: right; }
+
 
 /*section[data-type="chaptertitle"] {
  break-before: right;
