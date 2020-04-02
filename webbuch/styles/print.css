@@ -891,10 +891,21 @@ section[data-type="chapter"] {
 }
 
 section[data-type="chaptertitle"] {
+  page-break-after: always; }
+  section[data-type="chaptertitle"] > h1 {
+    page-break-before: always;}
+  section[data-type="chaptertitle"].open > h1 {
+    page-break-before: right; }
+    section[data-type="chaptertitle"].open > h1:before {
+
+      left: 100%;
+       }
+
+/*section[data-type="chaptertitle"] {
  break-before: right;
 }
 section[data-type="chaptertitle"] > h1 {
-    page-break-before: right;
+    page-break-before: right;*/
     /* forces new chapters to start on a right hand page */ }
 /*section[data-type="chaptertitle"]::before {
     content: "";
@@ -1078,15 +1089,13 @@ ol.upper-latin {
   -epubx-flow-into: logo;
 }
 
-
+/* pages layout
 
 @-epubx-page-master first-page-cover {
   -epubx-page: 1;
-  background: url("../images/cover-template.jpg");
+  background: url("../images/cover.jpg");
   background-size: cover;
 }
-
-/* pages layout
 
 @-epubx-page-master second-page-backcover {
   -epubx-page: 12;
