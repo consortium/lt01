@@ -354,14 +354,19 @@ blockquote p {
 blockquote  p.att { text-align: right; }
 
 h2, h2 strong,
-h3, h3 strong,
+h3, h3 strong {
+  font-family: -apple-system,BlinkMacSystemFont,"noto sans medium",helvetica neue,helvetica,roboto,segoe ui,arial,sans-serif;
+  margin-top: 1.5em;
+  color: rgb(15,100,167);
+  font-weight: normal;
+}
+
 h4, h4 strong,
 h5,
 h6 {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans medium",helvetica neue,helvetica,roboto,segoe ui,arial,sans-serif;
   margin-top: 1.5em;
   color: rgb(15,100,167);
-  font-weight: normal;
 }
 
 h1 {
@@ -887,7 +892,7 @@ h2 + p, h3 + p, h4 + p {
 }
 
 /*section[data-type="chapter"] {
- /* break-before: page; 
+ /* break-before: page;
 }*/
 
 section[data-type="chaptertitle"] {
