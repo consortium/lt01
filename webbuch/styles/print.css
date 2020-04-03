@@ -226,6 +226,7 @@ p:first-of-type {
 
 .Kolophon p + p {
   text-indent: 0em;
+  margin-top: 0;
 }
 
 p.stb { text-indent: 0; margin-top: 0.83em }
@@ -581,12 +582,12 @@ li p {
 ol {
   display: block;
   list-style-type: decimal;
-  /*list-style-position: inside;*/
+  list-style-position: inside;
   margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
-  padding-left: 40px;
+  padding-left: 20px;
   font-size: 9pt;
   line-height: 14pt;
 }
