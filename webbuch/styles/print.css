@@ -362,13 +362,13 @@ h3, h3 strong {
   font-weight: normal;
 }
 
-h4, h4 strong,
+/*h4, h4 strong,
 h5,
 h6 {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans medium",helvetica neue,helvetica,roboto,segoe ui,arial,sans-serif;
   margin-top: 1.5em;
   color: rgb(15,100,167);
-}
+}*/
 
 h1 {
   font-family : -apple-system,BlinkMacSystemFont,"noto serif",helvetica neue,helvetica,roboto,segoe ui,arial,sans-serif;
@@ -415,21 +415,21 @@ h3 {
   margin-bottom: 6pt;
 }
 
-h4 {
+h4, h4 strong {
   font-size: 11pt;
   margin-top: 20pt;
   margin-bottom: 9pt;
-  font-weight: normal;
+  font-weight: 500;
   page-break-inside: avoid;
   page-break-after: avoid;
 }
 
-h5 {
+h5, h5 strong {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,segoe ui,arial,sans-serif;
   font-size: 10pt;
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 500;
+  font-weight: 600;
   color: black;
   page-break-inside: avoid;
   page-break-after: avoid;
