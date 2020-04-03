@@ -400,9 +400,9 @@ h2 {
   page-break-after: avoid;
 }
 
-h2 + h3 {
+/*h2 + h3 {
   margin-top: 0;
-}
+}*/
 
 h3 {
   font-size: 13pt;
@@ -827,7 +827,7 @@ section[data-type="toc"] h4 {
   color: black;
   margin-top: 1em;
   margin-bottom: 0em;
-  letter-spacing: 0.2pt;
+  /*letter-spacing: 0.2pt;*/
   word-spacing: 1px;
   font-size: 10pt;
 }
