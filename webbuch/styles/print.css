@@ -981,7 +981,7 @@ section[data-type="fm2"] h2.part, section[data-type="fm2"] h3, section[data-type
   margin-top: 0;
 }
 
-section[data-type="chapter"] + h2 {
+div.article-body + h2 {
   margin-top: 0;
   color: green;
 }
