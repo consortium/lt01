@@ -354,14 +354,19 @@ blockquote p {
 blockquote  p.att { text-align: right; }
 
 h2, h2 strong,
-h3, h3 strong,
+h3, h3 strong {
+  font-family: -apple-system,BlinkMacSystemFont,"noto sans medium",helvetica neue,helvetica,roboto,segoe ui,arial,sans-serif;
+  margin-top: 1.5em;
+  color: rgb(15,100,167);
+  font-weight: normal;
+}
+
 h4, h4 strong,
 h5,
 h6 {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans medium",helvetica neue,helvetica,roboto,segoe ui,arial,sans-serif;
   margin-top: 1.5em;
   color: rgb(15,100,167);
-  font-weight: normal;
 }
 
 h1 {
@@ -886,15 +891,34 @@ h2 + p, h3 + p, h4 + p {
   margin-top: -5pt;
 }
 
-section[data-type="chapter"] {
- /* break-before: page; */
-}
+/*section[data-type="chapter"] {
+ /* break-before: page;
+}*/
 
 section[data-type="chaptertitle"] {
+  page-break-after: always; }
+  section[data-type="chaptertitle"] > h1 {
+    page-break-before: always;}
+  section[data-type="chaptertitle"].open > h1 {
+    page-break-before: right; }
+  /*  section[data-type="chaptertitle"].open > h1:before {
+
+      left: 100%;
+       }*/
+
+       section[data-type="chapter"] {
+         page-break-after: always; }
+         section[data-type="chaptertitle"] > div.article-part {
+           page-break-before: always;}
+         section[data-type="chaptertitle"].open > div.article-part {
+           page-break-after: right; }
+
+
+/*section[data-type="chaptertitle"] {
  break-before: right;
 }
 section[data-type="chaptertitle"] > h1 {
-    page-break-before: right;
+    page-break-before: right;*/
     /* forces new chapters to start on a right hand page */ }
 /*section[data-type="chaptertitle"]::before {
     content: "";
@@ -1078,15 +1102,13 @@ ol.upper-latin {
   -epubx-flow-into: logo;
 }
 
-
+/* pages layout
 
 @-epubx-page-master first-page-cover {
   -epubx-page: 1;
-  background: url("../images/cover-template.jpg");
+  background: url("../images/cover.jpg");
   background-size: cover;
 }
-
-/* pages layout
 
 @-epubx-page-master second-page-backcover {
   -epubx-page: 12;
