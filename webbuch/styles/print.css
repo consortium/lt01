@@ -607,7 +607,7 @@ a {
   text-decoration: none;
 }
 
-.article-body p a[href="http"] { target: new; target-name: new; target-new: tab; }
+p a[href="http"] { target: new; target-name: new; target-new: tab; }
 
 table {
   margin: 0 auto;
