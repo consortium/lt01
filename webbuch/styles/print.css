@@ -400,9 +400,9 @@ h2 {
   page-break-after: avoid;
 }
 
-/*h2 + h3 {
+h2 + h3 {
   margin-top: 0;
-}*/
+}
 
 h3 {
   font-size: 13pt;
@@ -606,6 +606,8 @@ a {
   color: black;
   text-decoration: none;
 }
+
+.article-body p a[href="http"] { target: new; target-name: new; target-new: tab; }
 
 table {
   margin: 0 auto;
@@ -977,7 +979,7 @@ section[data-type="fm2"] p {
   word-spacing: 0pt;
 }
 
-section[data-type="fm2"] h2.part, section[data-type="fm2"] h3, section[data-type="fm2"] table {
+section[data-type="fm2"] h2.part, section[data-type="fm2"] table {
   margin-top: 0;
 }
 
