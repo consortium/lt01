@@ -1005,7 +1005,7 @@ section[data-type="fm2"] table + p {
 }
 
 .txtnospace p {
-  letter-spacing: 0 !important;
+  letter-spacing: -0.1pt !important;
   word-spacing: 0 !important;
 }
 
