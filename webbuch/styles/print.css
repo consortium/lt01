@@ -236,7 +236,7 @@ p.ador { text-indent: 0; margin-left: 1.6pc; margin-top: 9pt }
 p.adorno { text-indent: 12px; margin-left: 1.6pc; margin-bottom: 9pt}
 p.start { text-indent: 0em; margin-top: 0em }
 p.divide { text-align: center }
-div.author {
+.author {
   color: black;
   font-size: 14pt;
   font-weight: normal;
