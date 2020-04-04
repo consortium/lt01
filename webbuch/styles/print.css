@@ -593,7 +593,7 @@ li p {
 ol {
   display: block;
   list-style-type: decimal;
-  padding-left:40px;
+
   list-style-position:inside;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -602,7 +602,8 @@ ol {
   font-size: 9pt;
   line-height: 14pt;
 }
-ol li {
+ {
+  padding-left:20px;
   text-indent:-20px;
 }
 
