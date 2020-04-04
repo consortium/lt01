@@ -428,7 +428,7 @@ h5, h5 strong  {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,segoe ui,arial,sans-serif;
   font-size: 9pt;
   font-weight: 600;
-  margin-top: 1.5em;
+  margin-top: 2em;
   margin-bottom: 5pt;
   color: black;
   page-break-inside: avoid;
@@ -927,19 +927,19 @@ section[data-type="chaptertitle"] {
            page-break-after: right; }
 
 
-/*section[data-type="chaptertitle"] {
+section[data-type="chaptertitle"] {
  break-before: right;
 }
 section[data-type="chaptertitle"] > h1 {
     page-break-before: right;*/
     /* forces new chapters to start on a right hand page */ }
-/*section[data-type="chaptertitle"]::before {
+section[data-type="chaptertitle"]::before {
     content: "";
     display: block; }*/
 
-/*section[data-type="chapter"] {
+section[data-type="chapter"] {
  break-after: always;
-}*/
+}
 
 /*section[data-type="chapter"] {
  break-before: left;
