@@ -593,11 +593,12 @@ li p {
 ol {
   display: block;
   list-style-type: decimal;
+  padding-left:0px;
+  list-style-position:inside;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-left: 0;
+  margin-left: 40px;
   margin-right: 0;
-  padding-left: 40px;
   font-size: 9pt;
   line-height: 14pt;
 }
