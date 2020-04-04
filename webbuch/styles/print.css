@@ -594,7 +594,6 @@ ol {
   display: block;
   list-style-type: decimal;
   padding-left:40px;
-  text-indent:-20px;
   list-style-position:inside;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -603,6 +602,10 @@ ol {
   font-size: 9pt;
   line-height: 14pt;
 }
+ol li {
+  text-indent:-20px;
+}
+
 
 a {
   color: black;
@@ -1002,7 +1005,7 @@ section[data-type="fm2"] table + p {
 
 .txtnospace p {
   letter-spacing: 0 !important;
-  word-spacing: 0.1pt !important;
+  word-spacing: 0 !important;
 }
 
 h2 {
