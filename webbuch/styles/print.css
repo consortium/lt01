@@ -226,6 +226,7 @@ p:first-of-type {
 
 .Kolophon p + p {
   text-indent: 0em;
+  margin-top: 0;
 }
 
 p.stb { text-indent: 0; margin-top: 0.83em }
@@ -235,7 +236,7 @@ p.ador { text-indent: 0; margin-left: 1.6pc; margin-top: 9pt }
 p.adorno { text-indent: 12px; margin-left: 1.6pc; margin-bottom: 9pt}
 p.start { text-indent: 0em; margin-top: 0em }
 p.divide { text-align: center }
-p.author {
+.author {
   color: black;
   font-size: 14pt;
   font-weight: normal;
@@ -361,13 +362,11 @@ h3, h3 strong {
   font-weight: normal;
 }
 
-h4, h4 strong,
-h5,
-h6 {
+/*h6 {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans medium",helvetica neue,helvetica,roboto,segoe ui,arial,sans-serif;
   margin-top: 1.5em;
   color: rgb(15,100,167);
-}
+}*/
 
 h1 {
   font-family : -apple-system,BlinkMacSystemFont,"noto serif",helvetica neue,helvetica,roboto,segoe ui,arial,sans-serif;
@@ -414,22 +413,35 @@ h3 {
   margin-bottom: 6pt;
 }
 
-h4 {
+h4, h4 strong {
   font-size: 11pt;
-  margin-top: 20pt;
+  font-family: -apple-system,BlinkMacSystemFont,"noto sans medium",helvetica neue,helvetica,roboto,segoe ui,arial,sans-serif;
+  color: rgb(15,100,167);
+  margin-top: 1.5em;
   margin-bottom: 9pt;
-  font-weight: normal;
+  font-weight: 500;
   page-break-inside: avoid;
   page-break-after: avoid;
 }
 
-h5 {
+h5, h5 strong  {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,segoe ui,arial,sans-serif;
-  font-size: 10pt;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 500;
+  font-size: 9pt;
+  font-weight: 600;
+  margin-top: 2.4em;
+  margin-bottom: 5pt;
   color: black;
+  page-break-inside: avoid;
+  page-break-after: avoid;
+}
+
+h6 {
+  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,segoe ui,arial,sans-serif;
+  font-size: 9pt;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 5pt;
+  color: rgb(15,100,167);
   page-break-inside: avoid;
   page-break-after: avoid;
 }
@@ -581,12 +593,13 @@ li p {
 ol {
   display: block;
   list-style-type: decimal;
-  /*list-style-position: inside;*/
+  padding-left:40px;
+  text-indent:-20px;
+  list-style-position:inside;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-left: 0;
+  margin-left: 20px;
   margin-right: 0;
-  padding-left: 40px;
   font-size: 9pt;
   line-height: 14pt;
 }
@@ -595,6 +608,8 @@ a {
   color: black;
   text-decoration: none;
 }
+
+a[href="http"] { target: new; target-name: new; target-new: tab; }
 
 table {
   margin: 0 auto;
@@ -816,7 +831,7 @@ section[data-type="toc"] h4 {
   color: black;
   margin-top: 1em;
   margin-bottom: 0em;
-  letter-spacing: 0.2pt;
+  /*letter-spacing: 0.2pt;*/
   word-spacing: 1px;
   font-size: 10pt;
 }
@@ -914,19 +929,19 @@ section[data-type="chaptertitle"] {
            page-break-after: right; }
 
 
-/*section[data-type="chaptertitle"] {
+section[data-type="chaptertitle"] {
  break-before: right;
 }
 section[data-type="chaptertitle"] > h1 {
     page-break-before: right;*/
     /* forces new chapters to start on a right hand page */ }
-/*section[data-type="chaptertitle"]::before {
+section[data-type="chaptertitle"]::before {
     content: "";
     display: block; }*/
 
-/*section[data-type="chapter"] {
+section[data-type="chapter"] {
  break-after: always;
-}*/
+}
 
 /*section[data-type="chapter"] {
  break-before: left;
@@ -966,8 +981,13 @@ section[data-type="fm2"] p {
   word-spacing: 0pt;
 }
 
-section[data-type="fm2"] h2.part, section[data-type="fm2"] h3, section[data-type="fm2"] table {
+section[data-type="fm2"] h2.part, section[data-type="fm2"] table, section[data-type="chapter"] h2.entry-title {
   margin-top: 0;
+}
+
+div.article-body + h2 {
+  margin-top: 0;
+  color: green;
 }
 
 section[data-type="fm2"] table td {
@@ -981,8 +1001,8 @@ section[data-type="fm2"] table + p {
 }
 
 .txtnospace p {
-  letter-spacing: 0.1pt !important;
-  word-spacing: 0.2pt !important;
+  letter-spacing: 0 !important;
+  word-spacing: 0.1pt !important;
 }
 
 h2 {
@@ -1102,13 +1122,14 @@ ol.upper-latin {
   -epubx-flow-into: logo;
 }
 
-/* pages layout
+
 
 @-epubx-page-master first-page-cover {
   -epubx-page: 1;
   background: url("../images/cover.jpg");
   background-size: cover;
 }
+/* pages layout
 
 @-epubx-page-master second-page-backcover {
   -epubx-page: 12;
