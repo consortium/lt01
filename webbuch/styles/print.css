@@ -1006,6 +1006,11 @@ section[data-type="fm2"] table + p {
   word-spacing: 0 !important;
 }
 
+.txtplusspace p {
+  letter-spacing: 0.3pt !important;
+  word-spacing: 0.3pt !important;
+}
+
 h2 {
   /* break-before: page; */
 }
