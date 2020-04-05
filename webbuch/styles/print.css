@@ -602,7 +602,7 @@ ol {
   font-size: 9pt;
   line-height: 14pt;
 }
- {
+ ol li {
   padding-left:20px;
   text-indent:-15px;
 }
