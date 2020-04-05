@@ -596,20 +596,18 @@ ol {
   list-style-position:inside;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-left: 20px;
+  margin-left: 0;
   margin-right: 0;
   font-size: 9pt;
   line-height: 14pt;
+  padding-left:10px;
 }
  ol li {
-  /*padding-left:25px;*/
+  padding-left:15px;
   text-indent:-22px;
+  color: red;
 }
-ol li::before {
-  content: "";
-  width: 8px;
-  display: inline-block;
-}
+
 
 
 a {
