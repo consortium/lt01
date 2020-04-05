@@ -590,7 +590,7 @@ li p {
     float: left;
 }
 
-ol {
+/*ol {
   display: block;
   list-style-type: decimal;
   list-style-position:inside;
@@ -601,11 +601,30 @@ ol {
   font-size: 9pt;
   line-height: 14pt;
   padding-left:10px;
+}*/
+ol,li {
+    margin: 0;
+    padding: 0;
 }
- ol li {
-  padding-left:15px;
-  text-indent:-22px;
-  color: red;
+
+ol {
+    counter-reset: foo;
+    display: table;
+    font-size: 9pt;
+    line-height: 14pt;
+}
+
+li {
+    list-style: none;
+    counter-increment: foo;
+    display: table-row;
+}
+
+li::before {
+    content: counter(foo) ".";
+    display: table-cell;
+    text-align: left;
+    padding-right: .3em;
 }
 
 
