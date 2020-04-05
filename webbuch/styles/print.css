@@ -608,8 +608,8 @@ ol {
     display: table;
     font-size: 9pt;
     line-height: 14pt;
-    margin: 0;
-    padding: 0;
+    margin: 1em 0;
+    padding-left: 0.6em;
     color: red;
 }
 
@@ -627,8 +627,6 @@ ol li::before {
     text-align: left;
     padding-right: .3em;
 }
-
-
 
 a {
   color: black;
