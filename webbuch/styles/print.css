@@ -603,11 +603,11 @@ ol {
 }
  ol li {
   /*padding-left:25px;*/
-  text-indent:-20px;
+  text-indent:-22px;
 }
 ol li::before {
   content: "";
-  width: 20px;
+  width: 8px;
   display: inline-block;
 }
 
