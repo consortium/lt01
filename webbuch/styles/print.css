@@ -602,22 +602,23 @@ li p {
   line-height: 14pt;
   padding-left:10px;
 }*/
-ol,li {
-    margin: 0;
-    padding: 0;
-}
 
 ol {
     counter-reset: foo;
     display: table;
     font-size: 9pt;
     line-height: 14pt;
+    margin: 0;
+    padding: 0;
+    color: red;
 }
 
 ol li {
     list-style: none;
     counter-increment: foo;
     display: table-row;
+    margin: 0;
+    padding: 0;
 }
 
 ol li::before {
