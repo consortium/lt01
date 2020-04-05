@@ -969,34 +969,10 @@ section[data-type="chaptertitle"]::before {
     content: "";
     display: block; }*/
 
-section[data-type="chapter"] {
- break-after: always;
-}
-
-/*section[data-type="chapter"] {
- break-before: left;
-}
-section[data-type="chapter"] > .article-body {
-    page-break-before: left;
-    color: blue;
-  /* forces new chapters to start on a left hand page *//* }
-section[data-type="chapter"]::after {
-    content: "";
-    display: block; }*/
-
-/*section[data-type="toc"] {
- break-before: right;
-}
-section[data-type="toc"] > h1 {
-    page-break-before: right;
-    /* forces new chapters to start on a right hand page */ /*}
-section[data-type="toc"]::before {
-    content: "";
-    display: block; }*/
-
+/*
 section[data-type="frontmatter"] {
  break-after: always;
-}
+}*/
 
 section[data-type="fm"] {
   page-break-before: always;
@@ -1013,11 +989,6 @@ section[data-type="fm2"] p {
 
 section[data-type="fm2"] h2.part, section[data-type="fm2"] table, section[data-type="chapter"] h2.entry-title {
   margin-top: 0;
-}
-
-div.article-body + h2 {
-  margin-top: 0;
-  color: green;
 }
 
 section[data-type="fm2"] table td {
