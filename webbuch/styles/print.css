@@ -949,8 +949,8 @@ section[data-type="chaptertitle"] {
          page-break-after: always; }
          section[data-type="chapter"] > div.article-part {
            page-break-before: always;}
-        /* section[data-type="chapter"].open > div.article-part {
-           page-break-after: left; }/*
+         section[data-type="chapter"].open > div.article-part {
+           page-break-after: left; }
 
           /* section[data-type="sect1"] {
              page-break-after: always; }
