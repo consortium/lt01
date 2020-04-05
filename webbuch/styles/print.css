@@ -570,7 +570,7 @@ ul {
   margin-bottom: 9pt;
   margin-left: 0;
   margin-right: 0;
-  padding-left: 30px;
+  padding-left: 1.9em;
   font-size: 9pt;
   line-height: 14pt;
 }
@@ -609,8 +609,7 @@ ol {
     font-size: 9pt;
     line-height: 14pt;
     margin: 1em 0;
-    padding-left: 0.6em;
-    color: red;
+    padding-left: 1.9em;
 }
 
 ol li {
@@ -625,7 +624,7 @@ ol li::before {
     content: counter(foo) ".";
     display: table-cell;
     text-align: left;
-    padding-right: .3em;
+    padding-right: .28em;
 }
 
 a {
