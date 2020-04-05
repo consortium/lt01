@@ -570,7 +570,7 @@ ul {
   margin-bottom: 9pt;
   margin-left: 0;
   margin-right: 0;
-  padding-left: 30px;
+  padding-left: 1.9em;
   font-size: 9pt;
   line-height: 14pt;
 }
@@ -590,18 +590,41 @@ li p {
     float: left;
 }
 
-ol {
+/*ol {
   display: block;
   list-style-type: decimal;
-  padding-left:40px;
-  text-indent:-20px;
   list-style-position:inside;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-left: 20px;
+  margin-left: 0;
   margin-right: 0;
   font-size: 9pt;
   line-height: 14pt;
+  padding-left:10px;
+}*/
+
+ol {
+    counter-reset: foo;
+    display: table;
+    font-size: 9pt;
+    line-height: 14pt;
+    margin: 1em 0;
+    padding-left: 1.9em;
+}
+
+ol li {
+    list-style: none;
+    counter-increment: foo;
+    display: table-row;
+    margin: 0;
+    padding: 0;
+}
+
+ol li::before {
+    content: counter(foo) ".";
+    display: table-cell;
+    text-align: left;
+    padding-right: .28em;
 }
 
 a {
@@ -910,11 +933,12 @@ h2 + p, h3 + p, h4 + p {
  /* break-before: page;
 }*/
 
+
 section[data-type="chaptertitle"] {
   page-break-after: always; }
   section[data-type="chaptertitle"] > h1 {
     page-break-before: always;}
-  section[data-type="chaptertitle"].open > h1 {
+  section[data-type="chaptertitle"].rghtitle > h1 {
     page-break-before: right; }
   /*  section[data-type="chaptertitle"].open > h1:before {
 
@@ -923,18 +947,24 @@ section[data-type="chaptertitle"] {
 
        section[data-type="chapter"] {
          page-break-after: always; }
-         section[data-type="chaptertitle"] > div.article-part {
+         section[data-type="chapter"] > div.article-part {
            page-break-before: always;}
-         section[data-type="chaptertitle"].open > div.article-part {
-           page-break-after: right; }
+         section[data-type="chapter"].open > div.article-part {
+           page-break-after: left; }
 
-
-section[data-type="chaptertitle"] {
+          /* section[data-type="sect1"] {
+             page-break-after: always; }
+             section[data-type="sect1"] > h1 {
+               page-break-before: always;
+               white-space: pre-line; }
+             section[data-type="sect1"].secret > h1 {
+               page-break-before: left; }
+/*section[data-type="chaptertitle"] {
  break-before: right;
 }
 section[data-type="chaptertitle"] > h1 {
     page-break-before: right;*/
-    /* forces new chapters to start on a right hand page */ }
+    /* forces new chapters to start on a right hand page */ /*}
 section[data-type="chaptertitle"]::before {
     content: "";
     display: block; }*/
@@ -1001,8 +1031,8 @@ section[data-type="fm2"] table + p {
 }
 
 .txtnospace p {
-  letter-spacing: 0 !important;
-  word-spacing: 0.1pt !important;
+  letter-spacing: -0.1pt !important;
+  word-spacing: 0 !important;
 }
 
 h2 {
