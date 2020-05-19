@@ -1132,7 +1132,7 @@ ol.upper-latin {
 
 @-epubx-page-master first-page-cover {
   -epubx-page: 1;
-  background: url("../images/cover.jpg");
+  background: url("../images/cover.png");
   background-size: cover;
 }
 
@@ -1148,6 +1148,11 @@ ol.upper-latin {
 
 @-epubx-page-master second-page-backcover {
   -epubx-page: 38;
+  background-size: cover;
+}
+
+@-epubx-page-master second-page-backcover {
+  -epubx-page: 52;
   background-size: cover;
 }
 
